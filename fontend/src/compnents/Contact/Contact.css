@@ -5,6 +5,16 @@
   color: white;
 }
 
+.logo {
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.509);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.324);
+  margin: 0;
+}
+.logo p {
+  margin: 0;
+}
+
 .Contact_innerDiv {
   display: flex;
   align-items: center;

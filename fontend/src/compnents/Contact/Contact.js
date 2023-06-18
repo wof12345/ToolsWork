@@ -6,13 +6,9 @@ const Contact = () => {
     <div className="Contact_outerDiv" id="2">
       <div className="Contact_innerDiv">
         <div className="Contact_Box">
-          <img
-            className="Contact_brand"
-            src="Image/logo.jpg"
-            alt=""
-            width="80"
-            height="80"
-          />
+          <div className="logo">
+            <p className="text-white">BlogDock</p>
+          </div>
           <h6 className="mx-5 mt-3">
             Facebook: <span style={{ color: "#3b5998" }}>facebook.com</span>{" "}
           </h6>
