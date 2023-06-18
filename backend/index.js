@@ -2,16 +2,21 @@ const express = require("express");
 const { MongoClient } = require("mongodb");
 const ObjectId = require("mongodb").ObjectId;
 const cors = require("cors");
+require("dotenv").config();
 const app = express();
 const port = 5000;
+
+let pass = process.env.PASS;
+
+console.log(pass);
+
 // middle ware
 app.use(cors());
 app.use(express.json());
 // Traveling-app-fifth
 // mJpFypko0n6xvgzy
 
-const uri =
-  "mongodb+srv://root:HumanityRules1234567890@cluster0.4m8b8.mongodb.net/easyrecipes?retryWrites=true";
+const uri = `mongodb+srv://root:${pass}@cluster0.4m8b8.mongodb.net/easyrecipes?retryWrites=true`;
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
