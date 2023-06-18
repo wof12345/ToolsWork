@@ -1,0 +1,34 @@
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  height: max-content;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 50px;
+  gap: 30px;
+  background-color: white;
+}
+
+.tagShow {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.badge_show {
+  transition: 0.5s !important;
+  padding: 10px 5px !important;
+  max-height: 32px !important;
+}
+
+.badge_show:hover {
+  padding: 10px !important;
+}
+
+.main_col {
+  display: flex;
+  flex-direction: column;
+}

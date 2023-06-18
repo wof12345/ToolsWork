@@ -1,0 +1,94 @@
+Curosul_img {
+  width: 200px;
+  height: 100px;
+}
+
+.head {
+  background-color: #2e8a99;
+}
+
+.head_letter {
+  transition: 0.5s;
+}
+
+.head_letter:hover {
+  color: #0e2954;
+  cursor: pointer;
+}
+
+.Caro {
+  background-color: rgba(0, 0, 0, 0.373);
+}
+
+.Caro_background {
+  width: auto;
+  height: 500px;
+  padding: 40px 20px;
+  margin: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 80px;
+}
+.Caro_Title {
+  text-align: center;
+  z-index: 10;
+  color: white;
+}
+.Caro_Item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Caro_Details {
+  max-width: 400px;
+  height: 300px;
+  display: flex;
+  z-index: 10;
+  align-items: center;
+  padding: 20px;
+  background-color: #2e8b9997;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  text-decoration: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  background-color: #0e2954;
+  transition: 0.5s;
+  margin: 10px;
+}
+
+.link:hover {
+  color: #2e8a99;
+  transform: translateY(10px);
+}
+
+.descBanner {
+  height: 400px;
+  margin: auto;
+  display: flex;
+  align-items: top;
+  overflow: hidden;
+}
+
+.Caro_ImgCont {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.Caro_img {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,24 @@
+.Nav_color {
+  background: #0e2954;
+}
+
+.Nav_item {
+  transition: 0.5s;
+  color: white;
+  border-radius: 25px;
+}
+
+.Nav_item:hover {
+  background-color: rgba(0, 0, 0, 0.262);
+}
+
+.Nav_part {
+  border-radius: 15px;
+  height: 40px;
+  width: 460px;
+  margin-left: 20px;
+}
+
+.Nav_brand {
+  border-radius: 40px;
+}

@@ -1,0 +1,58 @@
+.Contact_outerDiv {
+  width: 100%;
+  height: max-content;
+  background-color: #0e2954;
+  color: white;
+}
+
+.Contact_innerDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Contact_Box {
+  width: max-content;
+  height: max-content;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.link_outer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.link_cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.Contact_link {
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  color: white;
+  transition: 0.5s;
+  margin: 4px 0;
+}
+.Contact_link:hover {
+  color: coral;
+
+  transform: translateY(-2px);
+}
+
+.CopyRight {
+  text-align: center;
+}
+
+@media screen and (max-width: 830px) {
+  .Contact_innerDiv {
+    flex-direction: column;
+  }
+}

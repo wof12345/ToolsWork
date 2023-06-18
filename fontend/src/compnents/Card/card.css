@@ -1,0 +1,95 @@
+.service {
+  background-color: rgba(212, 189, 233, 0.031);
+  transition: 0.5s;
+}
+
+.service:hover {
+  transform: scale(1.04);
+  z-index: 20;
+  cursor: pointer;
+}
+
+.card {
+  transition: 0.5s;
+}
+
+.title {
+  background-color: #0e2954f0 !important;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.card:hover {
+  box-shadow: 3px 3px rgba(128, 128, 128, 0.169);
+}
+
+.service_btn1:hover {
+  /* color: rgb(139, 178, 211); */
+
+  border-radius: 40px;
+}
+
+.desc {
+  height: 300px;
+  overflow: auto;
+  margin: 15px 0;
+}
+
+.badge {
+  transition: 0.5s;
+  background-color: #84a7a1 !important;
+}
+.badge:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  transition: 0.5s;
+  background-color: #1f6e8c !important;
+  color: white !important;
+}
+
+.btn:hover {
+  box-shadow: 0px 4px 24px -2px rgba(82, 109, 130, 0.52);
+}
+
+.img_cont {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.word {
+  transition: 0.5s;
+  padding: 0 5px;
+  display: inline-block;
+}
+
+.word:hover {
+  transform: scale(1.1);
+  color: #1f6e8c;
+}
+
+@keyframes movin {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
