@@ -2,6 +2,12 @@
   background: #0e2954;
 }
 
+.logo {
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.509);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.324);
+}
+
 .Nav_item {
   transition: 0.5s;
   color: white;

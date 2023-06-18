@@ -9,13 +9,18 @@ let active = -1;
 let tags = [];
 function setTags(services) {
   tags = [];
+  let tagSet = new Set();
 
   services.forEach((elm, ind) => {
     elm.tags.forEach((tag) => {
-      tags.push(tag);
+      tagSet.add(tag);
     });
   });
-  // console.log(tags);
+
+  tagSet.forEach((elm) => {
+    tags.push(elm);
+  });
+  console.log(tags);
 }
 
 const Services = () => {
@@ -60,6 +65,7 @@ const Services = () => {
     }
   };
 
+  // get service by tag
   const getServiceBytag = (query, idx) => {
     active = idx;
     fetch(`http://localhost:5000/services/filter`, {

@@ -4,6 +4,7 @@ import Form from "react-bootstrap/Form";
 import { useParams } from "react-router-dom";
 import "../AddService/AddService.css";
 
+let len = null;
 const UpdateService = () => {
   const { serviceId } = useParams();
   const [service, setService] = useState({});
@@ -11,7 +12,14 @@ const UpdateService = () => {
   useEffect(() => {
     fetch(`http://localhost:5000/services/${serviceId}`)
       .then((res) => res.json())
-      .then((data) => setService(data));
+      .then((data) => {
+        if (!len) {
+          if (data && data.name) setService(data);
+          console.log(data);
+
+          len = data;
+        }
+      });
   }, [service, serviceId]);
 
   const handleNameChange = (e) => {
@@ -67,7 +75,6 @@ const UpdateService = () => {
       .then((data) => {
         if (data.modifiedCount > 0) {
           alert("Update Successful");
-          setService({});
         }
       });
 

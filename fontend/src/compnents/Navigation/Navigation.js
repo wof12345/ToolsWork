@@ -8,13 +8,9 @@ const Navigation = () => {
       <Navbar className="Nav_color" collapseOnSelect expand="lg">
         <Container>
           <Navbar.Brand href="/">
-            <img
-              className="Nav_brand"
-              src="Image/logo.jpg"
-              alt="First slide"
-              width="80"
-              height="80"
-            />
+            <div className="logo">
+              <p className="text-white">BlogDock</p>
+            </div>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -32,7 +28,7 @@ const Navigation = () => {
                 <span style={{ color: "white" }}>Bannar</span>
               </Nav.Link>
               <Nav.Link className="Nav_item" href="/addService">
-                <span style={{ color: "white" }}>Add Service</span>
+                <span style={{ color: "white" }}>Add Blog</span>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

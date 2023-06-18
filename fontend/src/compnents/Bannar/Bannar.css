@@ -75,6 +75,7 @@ Curosul_img {
   display: flex;
   align-items: top;
   overflow: hidden;
+  text-align: center;
 }
 
 .Caro_ImgCont {

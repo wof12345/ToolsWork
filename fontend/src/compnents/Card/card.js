@@ -14,11 +14,11 @@ const CardModel = (props, key) => {
   setTimeout(() => {
     setShow(true);
     console.log(show, key);
-  }, 2000);
+  }, 1200);
 
   return (
     <div className="service d-flex align-items-center justify-content-center text-center ">
-      <Transition nodeRef={nodeRef} in={show} timeout={2000}>
+      <Transition nodeRef={nodeRef} in={show} timeout={1200}>
         <Card className="card" style={{ opacity: show ? "1" : "0" }} id={name}>
           <div className="img_cont">
             <Card.Img className="img" variant="top" src={img} />
@@ -26,6 +26,7 @@ const CardModel = (props, key) => {
           <Card.Body>
             <Card.Title className="title">{name}</Card.Title>
             <Card.Text className="desc">
+              {/* wordify */}
               {desc.split(" ").map((elm, idx) => (
                 <span className="word" key={idx}>
                   {elm}
